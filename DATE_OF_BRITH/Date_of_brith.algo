@@ -1,0 +1,115 @@
+ALGORITHM Date_of_brith;
+VAR 
+day , month  , year : INTEGER ; 
+Leap_year , Day_max : INTEGER ;  
+ mois1, mois2 ,mois3, mois4, mois5, mois6, mois7,mois8,mois9, mois10,   mois11 ,  mois12 :string ; 
+
+
+BEGIN 
+                  
+    write ( "enter the day number [1..31] ") ; 
+    read ( day) ; 
+      write ( "enter the month number [1..12] ") ;
+    read ( month ) ; 
+      write ( "enter the year ") ;
+    read ( year) ;  
+              
+        if (year mod 4 != 0)  then 
+		
+			Leap_year = 0 ;
+		
+	else 
+        if (year mod 100 !=0)  then 
+		
+			Leap_year = 1 ;
+		
+	else if (year mod 400 !=0) then 
+		
+			Leap_year = 0 ;
+		
+	else 
+		
+			Leap_year = 1 ; 
+        end_if   
+       
+
+		
+		 (mois) 
+		if mois1 or mois3 or mois5 or mois7 or mois8 or mois10  or mois12 then 
+        nb_of_day_of_the_month := 31 
+        esle 
+        if mois4 or mois6 or mois9 or mois11  
+         nb_of_day_of_the_month := 30
+         else 
+					if (Leap_year == 1) 
+						Day_max = 29 ;
+					
+				else
+                     if (Leap_year== 0) 
+						Day_max = 28 ;
+					
+					break;
+				
+		
+		if (jour == jour_max) 
+		
+			next_day = 1 ;
+			if (month == 12) 
+			
+				next_month = 1 ;
+				next_year = year + 1 ;
+			 
+			else 
+			
+				next_month = mois + 1 ;
+				 next_year= year ;
+			end_if
+            	
+		
+		else 
+		
+			next_day = day + 1 ;
+			next_month = month ;
+			next_year = year ;
+		
+end_if 
+ 
+ switch 
+ { 
+ mois1 : January ;
+       }
+ {
+ mois2 : February ; 
+       }
+ {
+ mois3 : March ;
+  }
+ {
+ mois4 : April ;
+  }
+ {
+ mois5 : May ;
+  }
+ {
+ mois6 : June ;
+  }
+ {
+ mois7 : July ;
+  }
+ {
+ mois8 : August ;
+ }
+ {
+ mois9 : September ;
+ }
+ {
+ mois10 : October ; 
+ }
+ {
+ mois11 : November ;
+  }
+ {
+ mois12 : December ; 
+  } 
+		
+END
